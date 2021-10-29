@@ -1,4 +1,4 @@
-stopDag = input("Welke dag moet ik stoppen? (ma) (di) (wo) (do) (vr) (za) (zo)")
+stopDag = input("Welke dag moet ik stoppen? (ma) (di) (wo) (do) (vr) (za) (zo) ")
 deur = 1
 checken = False 
 while not checken:
