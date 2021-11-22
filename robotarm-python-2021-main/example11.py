@@ -6,12 +6,13 @@ robotArm = RobotArm('exercise 11')
 for bewegenRechts in range(9):
     robotArm.moveRight()
 robotArm.moveLeft()
-for blokjes in range(14):
+for blokjes in range(9):
     robotArm.grab()
     color = robotArm.scan()
     if color == "white":
         robotArm.moveRight()
         robotArm.drop()
+        robotArm.moveLeft()
         robotArm.moveLeft()
     else: 
         robotArm.drop()
