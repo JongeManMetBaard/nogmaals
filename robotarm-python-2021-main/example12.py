@@ -7,12 +7,11 @@ for blokjes in range(9):
     robotArm.grab()
     color = robotArm.scan()
     if color == "red":
-        for bewegenRechts in range(9):
+        for bewegenRechts in range(9 - blokjes):
             robotArm.moveRight()
         robotArm.drop()
-        for bewegenLinks in range(9 - blokjes):
+        for bewegenLinks in range(8 - blokjes):
             robotArm.moveLeft()
-        robotArm.moveRight()
     else:
         robotArm.drop()
         robotArm.moveRight()

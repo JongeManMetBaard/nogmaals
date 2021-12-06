@@ -3,9 +3,8 @@ from RobotArm import RobotArm
 robotArm = RobotArm('exercise 11')
 
 # Jouw python instructies zet je vanaf hier:
-for bewegenRechts in range(9):
+for bewegenRechts in range(8):
     robotArm.moveRight()
-robotArm.moveLeft()
 for blokjes in range(9):
     robotArm.grab()
     color = robotArm.scan()
